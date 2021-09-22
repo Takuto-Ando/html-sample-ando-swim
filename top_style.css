@@ -127,7 +127,7 @@ li a:after {
 	padding-top: 5px;
    padding-bottom: 30px;
    margin-top: 30px;
-   margin-bottom: 30px;
+   margin-bottom: -60px;
   
 
 }
@@ -203,12 +203,16 @@ li a:after {
 }
 .attract-1{
    margin:70px ;
+   border: double 5px #4ec4d3;
 }
 
 .attract-1 h3{
     letter-spacing: 5px;
     font-size: 30px;
     text-align: center;		
+}
+.attract-1 h3 span{
+   border-bottom:3px solid red;
 }
 .box {
    position: relative;
@@ -270,6 +274,10 @@ li a:after {
 img{
    width: 250px;
    height: 150px;
+   
+}
+img:hover{
+   opacity: 0.5;
 }
 p{
    font-size: 16px;

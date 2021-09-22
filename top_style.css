@@ -96,11 +96,12 @@ li a:after {
    color:#fff;
    font-size: 30px;
 }
- /*コンテナー（headerとfooterをのぞくブロックを囲むブロック）
----------------------------------------------------------------------------*/
+ 
+
 .container {
 	max-width: 1400px;	/*最大幅。これ以上広くならない指定。*/
 	margin: 0 auto;
+   background-color: white; 
 }
 
 /*コンテンツ（上のcontainerの中のブロック）
@@ -111,17 +112,19 @@ li a:after {
 }
 .contents section + section {
 	padding-top: 50px;
+   padding-bottom: 70px;
+
 }
  .contents h2 {
-	margin-bottom: 50px;
+	margin-bottom:70px;
 	clear: both;
 	padding: 0 20px;
-	font-size: 30px;		/*文字サイズ*/
-	text-align: center;		/*文字をセンタリング*/
-	letter-spacing: 0.2em;	/*文字間隔を少しだけ広くする指定*/
+	font-size: 30px;		
+		
+	background: #fafafa;
+   border-left: 4px solid #008dab;
+	color:black;			
 	
-	color:black;			/*文字色*/
-	border-radius: 100px;	/*角を丸くする指定。大きめであれば適当で構いません。*/
 }
 
 .catch{
@@ -130,16 +133,14 @@ li a:after {
 .catch h3{
     letter-spacing: 5px;
     font-size: 30px;
-    text-align: center;		/*文字をセンタリング*/
-    	/*文字サイズ*/
+    text-align: center;		
 	
 }
 
 .catch h4{
     letter-spacing: 5px;
     font-size: 30px;
-    text-align: center;		/*文字をセンタリング*/
-    	/*文字サイズ*/
+    text-align: center;		
 	
 }
 .catch h4 span{
@@ -155,14 +156,14 @@ li a:after {
     border: solid 3px #000000;
 
 }
-/*日付設定*/
+
 .news dt {
 	float: left;
 	width: 9em;
 	letter-spacing: 0.1em;
     
 }
-/*記事設定*/
+
 .news dd {
 	padding-left: 9em;
 }
@@ -171,34 +172,50 @@ li a:after {
 .attract h3{
     letter-spacing: 5px;
     font-size: 30px;
-    text-align: center;		/*文字をセンタリング*/
-    	/*文字サイズ*/
+    text-align: center;		
 }
 
 
 .main-menu h5{
     letter-spacing: 5px;
-    font-size: 30px;
-    text-align: center;		/*文字をセンタリング*/
-    	/*文字サイズ*/
+    font-size: 25px;
+    border-bottom:3px solid tomato;
+    /* background-color: white; */
 	
 }
 
+.columns-container {
+   display: flex;
+   margin-bottom: 28px;
+   flex-wrap: wrap;
+}
+.columns-contents {
+   flex-grow: 1;
+   min-width: 0;
+   word-break: break-word;
+   overflow-wrap: break-word;
+   margin: 10px;
+}
+img{
+   width: 250px;
+   height: 250px;
+}
+p{
 
-
+}
 footer {
 	clear: both;
 	text-align: center;
-	background: #222;	/*背景色*/
-	color: #fff;		/*文字色*/
-	font-size: 85%;		/*文字サイズ*/
+	background: #222;	
+	color: #fff;		
+	font-size: 85%;		
 }
 footer a {
-	color: #fff;	/*リンクテキストの文字色*/
+	color: #fff;
 	text-decoration: none;
 }
 footer a:hover {
-	color: #fff;	/*マウスオン時の文字色*/
+	color: rgb(10, 72, 206);	/*マウスオン時の文字色*/
 }
 footer .pr {
 	display: block;

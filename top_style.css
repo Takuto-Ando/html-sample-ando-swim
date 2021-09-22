@@ -8,15 +8,28 @@
     background-color: #e6e6e6;
     letter-spacing : 0.2em;
  }
+ 
  header {
-    padding: 30px 4% 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
- }
+   padding: 30px 4% 10px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   font-family: 'M PLUS 1p', sans-serif;
+}
+header.change-color{
+   padding: 30px 4% 10px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: #000;
+   transition: background-color 0.4s ease-out;
+   display: flex;
+   align-items: center;
+   font-family: 'M PLUS 1p', sans-serif;
+}
  h1 {
     margin: 0; padding: 0;
     font-size: 20px;
@@ -68,6 +81,7 @@ li a:after {
  .main-visual {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
     background: url('main_visual.jpeg') top center / cover no-repeat;
@@ -77,6 +91,11 @@ li a:after {
      color:#fff;
      font-size: 30px;
  }
+
+ .main-visual h3{
+   color:#fff;
+   font-size: 30px;
+}
  /*コンテナー（headerとfooterをのぞくブロックを囲むブロック）
 ---------------------------------------------------------------------------*/
 .container {

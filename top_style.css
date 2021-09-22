@@ -24,7 +24,7 @@
  a {	
     text-decoration: none;
     color: #fff;
- }
+ } 
  nav {
     margin: 0 0 0 auto;
  }
@@ -37,6 +37,34 @@
     margin: 0 0 0 15px;
     font-size: 14px;
  }
+ li a{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    
+    text-decoration: none;
+}
+
+li a:after {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:yellow;
+
+    transition:0.4s;
+    content: "";
+  }
+
+  li a:hover:after {
+    width: 100%;
+
+  }
  .main-visual {
     display: flex;
     justify-content: center;
@@ -44,47 +72,97 @@
     height: 100vh;
     background: url('main_visual.jpeg') top center / cover no-repeat;
  }
+
+ .main-visual h2{
+     color:#fff;
+     font-size: 30px;
+ }
  /*コンテナー（headerとfooterをのぞくブロックを囲むブロック）
 ---------------------------------------------------------------------------*/
-#container {
+.container {
 	max-width: 1400px;	/*最大幅。これ以上広くならない指定。*/
 	margin: 0 auto;
 }
 
 /*コンテンツ（上のcontainerの中のブロック）
 ---------------------------------------------------------------------------*/
-#contents {
+.contents {
 	overflow: hidden;
 	padding: 50px 3%;
 }
-#contents section + section {
+.contents section + section {
 	padding-top: 50px;
 }
- #contents h2 {
-	margin-bottom: 20px;
+ .contents h2 {
+	margin-bottom: 50px;
 	clear: both;
 	padding: 0 20px;
-	font-size: 20px;		/*文字サイズ*/
+	font-size: 30px;		/*文字サイズ*/
 	text-align: center;		/*文字をセンタリング*/
-	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする指定*/
-	background: #222;		/*背景色*/
-	color: #fff;			/*文字色*/
+	letter-spacing: 0.2em;	/*文字間隔を少しだけ広くする指定*/
+	
+	color:black;			/*文字色*/
 	border-radius: 100px;	/*角を丸くする指定。大きめであれば適当で構いません。*/
 }
 
-#news dl {
+.catch{
+    padding: 50px 3%;
+}
+.catch h3{
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;		/*文字をセンタリング*/
+    	/*文字サイズ*/
+	
+}
+
+.catch h4{
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;		/*文字をセンタリング*/
+    	/*文字サイズ*/
+	
+}
+.catch h4 span{
+    color:red;
+}
+
+
+
+.news dl {
 	padding-left: 20px;
 	margin-bottom: 15px;
+    font-weight: bold;
+    border: solid 3px #000000;
+
 }
 /*日付設定*/
-#news dt {
+.news dt {
 	float: left;
 	width: 9em;
 	letter-spacing: 0.1em;
+    
 }
 /*記事設定*/
-#news dd {
+.news dd {
 	padding-left: 9em;
+}
+
+
+.attract h3{
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;		/*文字をセンタリング*/
+    	/*文字サイズ*/
+}
+
+
+.main-menu h5{
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-align: center;		/*文字をセンタリング*/
+    	/*文字サイズ*/
+	
 }
 
 

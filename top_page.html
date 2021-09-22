@@ -13,9 +13,13 @@
       jQuery(window).on('scroll', function () {
  
  if (jQuery('.main-visual').height() < jQuery(this).scrollTop()) { 
-jQuery('.site-header').addClass('change-color'); }
+jQuery('.site-header').addClass('change-color');
+
+}
  else {
- jQuery('.site-header').removeClass('change-color'); } });
+ jQuery('.site-header').removeClass('change-color'); 
+
+} });
   </script>
 </head>
     <body class="site-contents">
@@ -28,7 +32,7 @@ jQuery('.site-header').addClass('change-color'); }
                     <li><a href="#">初心者向け</a></li>
                     <li><a href="#">メニューの組み方</a></li>
                     <li><a href="#">特別トレーニング</a></li>
-                    <li><a href="#">陸トレとストレッチ </a></li>
+                    <li><a href="#">陸上トレーニング </a></li>
                     <li><a href="#">よくある水泳のQ＆A</a></li>
                 </ul>
             </nav>
@@ -40,7 +44,7 @@ jQuery('.site-header').addClass('change-color'); }
         </header>
         <div class="main-visual">
             <h2>本物の練習で技術と楽しさを知り</h2>
-            <h3> ハイレベルの泳ぎ方を得る。</h3>
+            <h3> ハイレベルな泳ぎ方を得る。</h3>
          </div>
         <div class="container">
         
@@ -56,13 +60,13 @@ jQuery('.site-header').addClass('change-color'); }
             <h2>新着情報</h2>
             <dl>
             <dt>2021/09/20</dt>
-            <dd>秋の入会キャンペーン実施中！</dd>
+            <dd>初心者向けページを更新しました</dd>
             <dt>2021/09/14</dt>
-            <dd>大切な方と楽しもう！　ご紹介制度スタート</dd>
+            <dd>特別トレーニング＜チーム練習編＞を公開しました</dd>
             <dt>2021/08/10</dt>
-            <dd>少人数制スイミングスクール」プレミアムレッスン2月の開催情報を掲載</dd>
+            <dd>オンライン水泳教室の中止のお知らせ</dd>
             <dt>2021/07/27</dt>
-            <dd>夏の短期・体験教室 情報公開しました</dd>
+            <dd>陸上トレーニング＜家でも簡単にできるトレーニング！＞を公開しました</dd>
             <dt>2021/04/01</dt>
             <dd>WEBページリニューアルしました</dd>
             </dl>
@@ -71,15 +75,25 @@ jQuery('.site-header').addClass('change-color'); }
         </section>
        
         <section class="attract">
-            
+            <div class="attract-1">
             <h3>今の練習に飽きているスイマー必見</h3>
             <h3>モチベーションアップにつながる練習方法を教えます！
             </h3>
+        </div>
+            <div class="box">
+                <span class="box-title">このサイトはこんなあなたにオススメ！</span>
+                <p><span>&#10003;</span>プールに行って何を練習したらいいか分からない人</p>
+                <p><span>&#10003;</span>せっかく泳ぐなら効率よく練習したい人</p>
+                <p><span>&#10003;</span>今やっている練習に飽きた人</p>
+                <p><span>&#10003;</span>大会直前で手っ取り早くタイムを上げたい人</p>
+                
+
+            </div>
         </section>
         <section class="main-menu">
             <h2>コンテンツメニュー</h2>
             
-            <h5>初心者向け</h5>
+            <h5>①初心者向け</h5>
             <div class="columns-container">
                 <div class="columns-contents">
                     <div class="block-image">
@@ -107,7 +121,7 @@ jQuery('.site-header').addClass('change-color'); }
                     <p>呼吸のタイミングの合わせ方を身につけよう</p>
                 </div>
             </div>
-            <h5>メニューの組み方</h5>
+            <h5>②メニューの組み方</h5>
             <div class="columns-container">
                 <div class="columns-contents">
                     <div class="block-image">
@@ -117,20 +131,20 @@ jQuery('.site-header').addClass('change-color'); }
                 </div>
                
             </div>
-            <h5>特別トレーニング</h5>
+            <h5>③特別トレーニング</h5>
             <div class="columns-container">
                 <div class="columns-contents">
                     <div class="block-image">
                         <img src="block.png">
                     </div>
-                    <p>平泳ぎ</p>
+                    <p>伸びのある泳ぎを目指そう</p>
                 </div>
                 
                 <div class="columns-contents">
                     <div class="block-image">
                         <img src="block.png">
                     </div>
-                    <p>クロール</p>
+                    <p>力強いフォームを身につけよう</p>
                 </div>
                 <div class="columns-contents">
                     <div class="block-image">
@@ -151,7 +165,7 @@ jQuery('.site-header').addClass('change-color'); }
                     <p>チームで練習できるメニューを紹介します！</p>
                 </div>
             </div>
-            <h5>陸トレとストレッチ</h5>
+            <h5>④陸上トレーニング</h5>
             <div class="columns-container">
                 <div class="columns-contents">
                     <div class="block-image">
@@ -168,7 +182,7 @@ jQuery('.site-header').addClass('change-color'); }
                 </div>
                 
             </div>
-            <h5>よくある水泳のQ＆A</h5>
+            <h5>⑤よくある水泳のQ＆A</h5>
             <div class="columns-container">
                 <div class="columns-contents">
                     <div class="block-image">

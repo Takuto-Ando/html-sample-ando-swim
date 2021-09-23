@@ -14,11 +14,13 @@
    position: fixed;
    top: 0;
    width: 100%;
+   white-space: nowrap;
    background-color: transparent;
    display: flex;
    align-items: center;
    font-family: 'M PLUS 1p', sans-serif;
-   z-index: 2;
+   z-index: 3;
+   
 }
 header.change-color{
    padding: 30px 4% 10px;
@@ -41,29 +43,39 @@ header.change-color{
  } 
  nav {
     margin: 0 0 0 auto;
+    overflow-x: scroll;
+     /* IE, Edge 対応 */
+     -ms-overflow-style: none;
+     /* Firefox 対応 */
+     scrollbar-width: none
+ }
+ nav::-webkit-scrollbar {
+    display:none; 
  }
  ul {
     list-style: none;
     margin: 0;
     display: flex;
+    padding-bottom: 20px;
  }
  li {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 70px;
     font-size: 14px;
  }
  li a{
     position: relative;
     margin: 0px;
-    padding: 0px;
+    
     font-size: 18px;
     font-weight: 700;
     color: #fff;
     display: inline-block;
-    
+    margin-right: 10px;
+    margin-left: 10px;
     text-decoration: none;
 }
 
-li a:after {
+ nav li a:after {
     position: absolute;
     bottom: -8px;
     left: 0;
@@ -96,18 +108,19 @@ li a:after {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
     height: 100vh;
     background: url('main_visual.jpeg') top center / cover no-repeat;
  }
 
  .main-visual h2{
      color:#fff;
-     font-size: 30px;
+     font-size: 50px;
  }
 
  .main-visual h3{
    color:#fff;
-   font-size: 30px;
+   font-size: 50px;
 }
  
 
@@ -125,9 +138,9 @@ li a:after {
 }
 .contents section + section {
 	padding-top: 5px;
-   padding-bottom: 30px;
+   padding-bottom: 1px;
    margin-top: 30px;
-   margin-bottom: -60px;
+   
   
 
 }
@@ -136,48 +149,85 @@ li a:after {
 	clear: both;
 	padding: 0 20px;
 	font-size: 30px;		
-	border: solid 3px #0872AE;
-	background:#fff ;
+	border-bottom: solid 3px #000;
+	
    /* border-left: 15px solid #0872AE; */
 	color:#000;			
 	
 }
+.contents h2 span{
+   margin-left: 20px;
+   font-size: 16px;
+   color: rgb(175, 153, 52);;
+}
 
 .catch{
     padding: 50px 3%;
-    background-color: #000;
-    
+    display: flex; 
+    margin-bottom:70px;
+    justify-content: space-between;
+    margin-top: 0%;
+   
 }
 .catch h3{
     letter-spacing: 5px;
-    font-size: 30px;
-    text-align: center;		
-	color:#fff;
+    font-size: 60px;
+    /* text-align: center;		 */
+	color:#000;
 }
 
 .catch h4{
     letter-spacing: 5px;
     font-size: 30px;
-    text-align: center;		
-    color:#fff;
+    /* text-align: center;		 */
+    color:#000;
+
 }
+
 .catch h4 span{
     color:red;
    
 }
+.right-catch
+{
+  z-index:2;
+}
+.right-catch img
+{
+   position: absolute;
+   width: 660px;
+   height: 480px;
+   right: 350px;
+}
+.left-catch
+{
+  width: 700px;
+  z-index:1;
+  position: relative;
+ 
+}
+.left-catch h6{
+   font-size: 18px;
+   letter-spacing: 5px;
+   line-height: 2.875;
+   background-color: rgb(247, 247, 247);
+   padding-left: 25px;
+
+}
+
 .news{
    background-color: #fafafa;
    
 }
 
 
-.news dl {
+/* .news dl {
 	padding-left: 20px;
 	margin-bottom: 15px;
     font-weight: bold;
     border: solid 3px #0872AE;
     background-color: #fff;
-    /* border-radius: 10px; */
+   
 }
 .news  h2 {
 	margin-bottom:20px;
@@ -200,7 +250,62 @@ li a:after {
 
 .news dd {
 	padding-left: 9em;
+} */
+.NewsList_main {
+   margin: 1.47vw 0 0;
+   display: flex;
+   flex-direction: column;
 }
+li {
+   list-style-type: none;
+   box-sizing: border-box;
+}
+
+.NewsItem_main{
+   padding: 1.25vw 0;
+   border-top: 1px solid #dedede;
+   display: flex;
+   margin-left: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+
+}
+.NewsItem_date{
+   width: 7.17vw;
+   padding: 0 1.47vw 0 0;
+   align-items: center;
+   letter-spacing: .04em;
+   color: #aaa;
+}
+
+.news ul li a {
+   margin-top: 0;
+   margin-bottom: 0;
+   color: #222;
+}
+.NewsItem_link{
+   display: flex;
+   align-items: center;
+ 
+
+}
+.NewsItem_category{
+   font-family: Roboto,sans-serif;
+   letter-spacing: .04em;
+   color: #d62b7b;
+   margin-right:30px ;
+}
+.NewsItem_title{
+   font-size: 1rem;
+   box-sizing: border-box;
+}
+
 .attract-1{
    margin:70px ;
    border: double 5px #4ec4d3;
@@ -271,12 +376,12 @@ li a:after {
    width: 250px;
    height: 150px;
 }
-img{
+.columns-contents img{
    width: 250px;
    height: 150px;
    
 }
-img:hover{
+.columns-contents img:hover{
    opacity: 0.5;
 }
 p{
@@ -289,7 +394,8 @@ footer {
 	text-align: center;
 	background: #222;	
 	color: #fff;		
-	font-size: 85%;		
+	font-size: 85%;	
+  	
 }
 footer a {
 	color: #fff;

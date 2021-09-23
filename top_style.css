@@ -189,16 +189,26 @@ header.change-color{
     color:red;
    
 }
-.right-catch
+.catch-img
 {
   z-index:2;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 2s;
 }
-.right-catch img
+.catch-img.is-show {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0px);
+ }
+.catch img
 {
    position: absolute;
    width: 660px;
    height: 480px;
-   right: 350px;
+   right: 0px;
+   
 }
 .left-catch
 {
@@ -249,19 +259,28 @@ header.change-color{
  margin-top: -300px;
 
 }
-.second-left-catch img
+.second-catch .catch-img img
 {
   
   width: 770px;
   height: 520px;
   /* left: 60px; */
 }
-.second-left-catch
+.second-catch .catch-img
 {
  width: 770px;
  z-index:2;
  position: relative;
+ opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 2s;
 
+}
+.second-catch .catch-img.is-show{
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0px);
 }
 .second-right-catch h6{
    font-size: 18px;

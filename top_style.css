@@ -144,6 +144,7 @@ header.change-color{
   
 
 }
+
  .contents h2 {
 	margin-bottom:10px;
 	clear: both;
@@ -164,7 +165,7 @@ header.change-color{
 .catch{
     padding: 50px 3%;
     display: flex; 
-    margin-bottom:70px;
+    padding-bottom: 0;
     justify-content: space-between;
     margin-top: 0%;
    
@@ -214,6 +215,65 @@ header.change-color{
    padding-left: 25px;
 
 }
+
+.second-catch{
+   padding: 50px 3%;
+   display: flex; 
+
+   justify-content: space-between;
+   margin-top: 0%;
+  
+}
+.second-catch h3{
+   letter-spacing: 5px;
+   font-size: 60px;
+   
+  color:#000;
+}
+
+.second-catch h4{
+   letter-spacing: 5px;
+   font-size: 30px;
+   /* text-align: center;		 */
+   color:#000;
+
+}
+
+.second-catch h4 span{
+   color:red;
+  
+}
+.second-right-catch
+{
+ z-index:1;
+ margin-top: -300px;
+
+}
+.second-left-catch img
+{
+  
+  width: 770px;
+  height: 520px;
+  /* left: 60px; */
+}
+.second-left-catch
+{
+ width: 770px;
+ z-index:2;
+ position: relative;
+
+}
+.second-right-catch h6{
+   font-size: 18px;
+   letter-spacing: 5px;
+   line-height: 2.875;
+   background-color: rgb(247, 247, 247);
+   padding-left: 55px;
+   padding-bottom: 40px  ;
+   height: 520px;
+   padding-top: 11px;
+}
+
 
 .news{
    background-color: #fafafa;
@@ -299,14 +359,16 @@ li {
    font-family: Roboto,sans-serif;
    letter-spacing: .04em;
    color: #d62b7b;
-   margin-right:30px ;
+   margin-right:10px ;
+   width: 50px;
 }
 .NewsItem_title{
    font-size: 1rem;
    box-sizing: border-box;
+   margin-left: 20px;
 }
 
-.attract-1{
+/* .attract-1{
    margin:70px ;
    border: double 5px #4ec4d3;
 }
@@ -318,12 +380,13 @@ li {
 }
 .attract-1 h3 span{
    border-bottom:3px solid red;
-}
+} */
 .box {
    position: relative;
    margin: 2em 0;
    padding: 0.5em 1em;
-   border: solid 3px #0872AE;
+   background-color: rgb(247, 247, 247);
+   /* border: solid 3px #0872AE; */
 }
 .box .box-title {
    position: absolute;
@@ -334,7 +397,7 @@ li {
    height: 25px;
    line-height: 25px;
    font-size: 17px;
-   background: #0872AE;
+   background: #000;
    color: #ffffff;
    font-weight: bold;
    border-radius: 5px 5px 0 0;
@@ -342,7 +405,7 @@ li {
 .box p {
    margin: 0; 
    padding: 0;
-   font-size: 20px;
+   font-size: 22px;
 }
 .box p span{
    color: red;
@@ -410,5 +473,5 @@ footer .pr {
 }
 
 small {
-    font-size: smaller;
+    font-size: 16px;
 }

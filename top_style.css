@@ -21,6 +21,7 @@
    font-family: 'M PLUS 1p', sans-serif;
    z-index: 3;
    
+   
 }
 header.change-color{
    padding: 30px 4% 10px;
@@ -35,7 +36,8 @@ header.change-color{
 }
  h1 {
     margin: 0; padding: 0;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
  }
  a {	
     text-decoration: none;
@@ -66,7 +68,7 @@ header.change-color{
     position: relative;
     margin: 0px;
     
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: #fff;
     display: inline-block;
@@ -80,7 +82,7 @@ header.change-color{
     bottom: -8px;
     left: 0;
     width: 0%;
-    height: 3px;
+    height: 4px;
     background-color:yellow;
 
     transition:0.4s;
@@ -108,19 +110,26 @@ header.change-color{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    
+    font-family: 'Shippori Mincho', serif;
+    
     height: 100vh;
     background: url('main_visual.jpeg') top center / cover no-repeat;
  }
 
  .main-visual h2{
      color:#fff;
-     font-size: 50px;
+     font-size: 60px;
+     text-shadow: 2px 3px 2px #808080;
+     letter-spacing: 13px;
  }
 
  .main-visual h3{
    color:#fff;
-   font-size: 50px;
+   font-size: 60px;
+   text-shadow: 2px 3px 2px #808080;
+   letter-spacing: 13px;
+
 }
  
 
@@ -158,8 +167,9 @@ header.change-color{
 }
 .contents h2 span{
    margin-left: 20px;
-   font-size: 16px;
-   color: rgb(175, 153, 52);;
+   font-size: 18px;
+   color: rgb(175, 153, 52);
+   font-family: 'Scheherazade New', serif;
 }
 
 .catch{
@@ -168,11 +178,13 @@ header.change-color{
     padding-bottom: 0;
     justify-content: space-between;
     margin-top: 0%;
+    font-family: 'Noto Sans JP', sans-serif;
    
 }
 .catch h3{
     letter-spacing: 5px;
     font-size: 60px;
+    
     /* text-align: center;		 */
 	color:#000;
 }
@@ -256,7 +268,7 @@ header.change-color{
 .second-right-catch
 {
  z-index:1;
- margin-top: -300px;
+ margin-top: -390px;
 
 }
 .second-catch .catch-img img
@@ -274,7 +286,7 @@ header.change-color{
  opacity: 0;
   visibility: hidden;
   transform: translateY(40px);
-  transition: all 2s;
+  transition: all 1.5s;
 
 }
 .second-catch .catch-img.is-show{
